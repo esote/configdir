@@ -38,7 +38,7 @@ func TestCreateDir(t *testing.T) {
 	}
 
 	// Create a new config directory
-	d, err := Dir(name)
+	d, err := New(name)
 	if err != nil {
 		t.Fatal(err)
 	}

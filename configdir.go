@@ -1,3 +1,4 @@
+// Package configdir creates platform-specific user config directories.
 package configdir
 
 import (
@@ -6,7 +7,8 @@ import (
 	"path/filepath"
 )
 
-func Dir(name string) (string, error) {
+// New creates a new config directory.
+func New(name string) (string, error) {
 	d, err := dir()
 	if err != nil {
 		return "", err
